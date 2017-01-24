@@ -10,7 +10,8 @@ public class Calculator
 		System.out.println( "Choose an operation: ");
 		System.out.println("1. addition, 2. subtraction, 3. multipication, 4. exponents");
 		int response = userInput.nextInt();
-		
+		 
+		//akjaeh
 		
 	    if (response == 1)
 			{
