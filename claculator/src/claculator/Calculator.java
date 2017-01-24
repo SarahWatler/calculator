@@ -3,29 +3,49 @@ package claculator;
 import java.util.Scanner;
 
 public class Calculator
+
 	{
 		public static void main(String[] args)
 		{
 		Scanner userInput = new Scanner(System.in);
 		System.out.println( "Choose an operation: ");
-		System.out.println("1. addition, 2. subtraction, 3. multipication, 4. exponents");
+		System.out.println("1. addition");
+		System.out.println("2. subtraction");
+		System.out.println("3.multipcation");
+		System.out.println("4. exponents");
 		int response = userInput.nextInt();
 		 
-		//akjaeh
 		
 	    if (response == 1)
 			{
-				System.out.println("choose two numbers");
-				add();
+				Scanner userInput = new Scanner(System.in);
+				System.out.println("choose one number to add");
+				int response1 = userInput.nextInt();
+				System.out.println("chooose a second number");
+				int response2 = userInput.nextInt();
+				System.out.println("the answer is: " + add(response1); + add(response2););
+		
 			}
 	    else if (response == 2)
 	    	{
-	    		System.out.println("choose two numbers");
-	    		subtract();
+	    		Scanner userInput = new Scanner(System.in);
+	    		System.out.println("choose one number to subtract");
+	    		int response = userInput.nextInt();
+	    		System.out.println("chooose a second number");
+	    	}
+	    else if (response == 3)
+	    	{
+	    		Scanner userInput = new Scanner(System.in);
+	    		System.out.println("choose one number to multiply");
+	    		int response = userInput.nextInt();
+	    		System.out.println("choose a second number");
 	    	}
 	    else 
 	    	{
-	    		System.out.println("choose two numbers");	
+	    		Scanner userInput = new Scanner(System.in);
+	    		System.out.println("choose one base number");
+	    		int response = userInput.nextInt();
+	    		System.out.println("choose one exponent");
 	    	}
 		}
 		public static double add(double x, double y)
